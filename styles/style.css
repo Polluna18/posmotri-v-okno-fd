@@ -20,6 +20,7 @@ html {
   background-color: #1b1919;
   padding: 133px 30px;
 }
+
 .content {
   display: grid;
   width: 1140px;
@@ -29,31 +30,37 @@ html {
   grid-auto-flow: row;
   align-items: end;
 }
+
 .result {
   height: 456px;
 }
+
 .result__video-container {
   position: relative;
   margin-bottom: 16px;
   width: 711px;
   height: 386px;
 }
+
 .result__video {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
+
 .search-form {
   display: flex;
   justify-content: space-between;
   align-items: start;
 }
+
 .search-form__fieldset {
   display: flex;
   flex-direction: column;
   border: none;
   gap: 5px;
 }
+
 .search-form__fieldset-title {
   font-size: 18px;
   font-weight: normal;
@@ -147,29 +154,35 @@ button:has(:focus-visible) {
   line-height: 94%;
   padding-bottom: 26px;
 }
+
 .content__accent {
   color: #545050;
 }
+
 .content__list-container {
   position: relative;
   height: 298px;
   overflow-y: auto;
   cursor: pointer;
 }
+
 .content__list {
   display: flex;
   flex-direction: column;
   gap: 30px;
 }
+
 .content__list-item {
   display: block;
   padding: 0 3px;
 }
+
 .content__card-link {
   display: block;
   text-decoration-line: none;
   color: #fff;
 }
+
 .content__video-card-title {
   font-family: "Oswald", sans-serif;
   font-size: 30px;
@@ -181,9 +194,11 @@ button:has(:focus-visible) {
   overflow: hidden;
   white-space: nowrap;
 }
+
 .content__video-card-description {
   line-height: 16.2px;
 }
+
 .content__video-card {
   display: flex;
   flex-direction: row;
