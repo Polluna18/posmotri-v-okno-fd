@@ -11,6 +11,8 @@ html {
 .page {
   display: flex;
   position: relative;
+  align-items: center;
+  justify-content: center;
   inline-size: 1200px;
   block-size: 100%;
   margin: auto;
@@ -192,7 +194,6 @@ button:has(:focus-visible) {
   line-clamp: 1;
   text-overflow: ellipsis;
   overflow: hidden;
-  white-space: nowrap;
 }
 
 .content__video-card-description {
