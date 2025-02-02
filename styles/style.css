@@ -9,13 +9,220 @@ html {
 }
 
 .page {
+  display: flex;
+  position: relative;
   inline-size: 1200px;
   block-size: 100%;
   margin: auto;
   color: #fff;
-  font-family: 'Fira Sans Condensed', sans-serif;
+  font-family: "Fira Sans Condensed", sans-serif;
   font-size: 18px;
   background-color: #1b1919;
+  padding: 133px 30px;
+}
+.content {
+  display: grid;
+  width: 1140px;
+  height: 534px;
+  grid-template-columns: 711px 399px;
+  column-gap: 30px;
+  grid-auto-flow: row;
+  align-items: end;
+}
+.result {
+  height: 456px;
+}
+.result__video-container {
+  position: relative;
+  margin-bottom: 16px;
+  width: 711px;
+  height: 386px;
+}
+.result__video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.search-form {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+}
+.search-form__fieldset {
+  display: flex;
+  flex-direction: column;
+  border: none;
+  gap: 5px;
+}
+.search-form__fieldset-title {
+  font-size: 18px;
+  font-weight: normal;
+}
+
+.search-form__checkbox-list {
+  display: flex;
+  gap: 15px;
+}
+
+.search-form__pseudo-checkbox {
+  width: 19px;
+  height: 19px;
+  border: 1px solid #fff;
+}
+
+.search-form__checkbox:checked + .search-form__pseudo-checkbox::after {
+  display: block;
+  content: "";
+  background-color: #fff;
+  inline-size: 15px;
+  block-size: 15px;
+  margin: 1px;
+}
+
+.search-form__label {
+  display: flex;
+  width: fit-content;
+  gap: 5px;
+  cursor: pointer;
+}
+
+.search-form__textfield {
+  background-color: transparent;
+  color: #fff;
+  font-family: "Fira Sans Condensed", sans-serif;
+  font-size: 18px;
+  font-weight: normal;
+  min-width: 225px;
+  border: none;
+  border-top: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+}
+
+label:has(:focus-visible) {
+  outline: 1px solid #fff;
+}
+
+label:hover {
+  text-decoration: underline;
+  text-underline-position: under;
+}
+
+.button {
+  background-color: inherit;
+  font-family: "Fira Sans Condensed", sans-serif;
+  font-size: 18px;
+  color: #fff;
+  border-color: #fff;
+  cursor: pointer;
+  align-self: self-end;
+}
+
+.search-form__submit-button {
+  width: 194px;
+  height: 34px;
+}
+
+.more-button {
+  width: 100%;
+  height: 34px;
+}
+
+button:hover {
+  text-decoration: underline;
+  text-underline-position: under;
+}
+
+button:active {
+  background-color: rgba(84, 80, 80, 1);
+}
+button:has(:focus-visible) {
+  outline: 1px solid #fff;
+}
+
+.title {
+  font-family: "Oswald", sans-serif;
+  font-size: 75px;
+  text-transform: uppercase;
+  font-weight: bold;
+  line-height: 94%;
+  padding-bottom: 26px;
+}
+.content__accent {
+  color: #545050;
+}
+.content__list-container {
+  position: relative;
+  height: 298px;
+  overflow-y: auto;
+  cursor: pointer;
+}
+.content__list {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.content__list-item {
+  display: block;
+  padding: 0 3px;
+}
+.content__card-link {
+  display: block;
+  text-decoration-line: none;
+  color: #fff;
+}
+.content__video-card-title {
+  font-family: "Oswald", sans-serif;
+  font-size: 30px;
+  font-weight: bold;
+  text-transform: uppercase;
+  white-space: nowrap;
+  line-clamp: 1;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.content__video-card-description {
+  line-height: 16.2px;
+}
+.content__video-card {
+  display: flex;
+  flex-direction: row;
+  align-items: start;
+}
+
+.content__video-card-thumbnail {
+  width: 194px;
+  height: 103px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.content__video-card-description-container {
+  flex-grow: 1;
+  max-width: 196px;
+}
+
+.content__card-link:active {
+  background-color: rgba(84, 80, 80, 1);
+}
+
+article:hover {
+  text-decoration: underline;
+  text-underline-position: under;
+}
+
+article:focus-visible {
+  outline: 1px solid #fff;
+}
+
+.visually-hidden {
+  position: absolute;
+  inline-size: 1px;
+  block-size: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  white-space: nowrap;
 }
 
 h1,
@@ -47,5 +254,5 @@ ol {
 }
 
 .custom-scrollbar::-webkit-scrollbar-thumb {
-  background-color: #D9D9D9;
+  background-color: #d9d9d9;
 }
